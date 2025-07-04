@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Investimentos</title>
+    <style>
+        :root {
+            --xp-yellow: #FFB612;
+            --xp-dark: #121212;
+            --xp-gray: #1E1E1E;
+            --xp-light-gray: #2D2D2D;
+        }
+        
+        body {
+            font-family: system-ui, sans-serif;
+            background-color: var(--xp-dark);
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .xp-header {
+            background-color: var(--xp-dark);
+            padding: 1.5rem;
+            border-bottom: 2px solid var(--xp-yellow);
+        }
+        
+        .xp-card {
+            background-color: var(--xp-gray);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1rem;
+            border: 1px solid var(--xp-light-gray);
+        }
+        
+        .xp-highlight {
+            color: var(--xp-yellow);
+            font-weight: bold;
+        }
+        
+        .xp-divider {
+            border-top: 1px solid var(--xp-light-gray);
+            margin: 1rem 0;
+        }
+        
+        .xp-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .fixed-income {
+            background-color: #1E3A1E;
+            color: #4ADE80;
+        }
+        
+        .variable-income {
+            background-color: #1E3A5F;
+            color: #60A5FA;
+        }
+        
+        input[type="checkbox"] {
+            appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid var(--xp-light-gray);
+            border-radius: 0.25rem;
+            background-color: var(--xp-gray);
+        }
+        
+        input[type="checkbox"]:checked {
+            background-color: var(--xp-yellow);
+            border-color: var(--xp-yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="xp-header">
+        <h1 class="text-2xl font-bold">Bem-vindo ao seu Painel de Investimentos</h1>
+    </div>
+
+    <div class="xp-card">
+        <h2 class="text-xl font-semibold mb-4">Resumo</h2>
+        
+        <div class="flex gap-8 mb-6">
+            <div>
+                <p class="text-gray-400">Total Investido</p>
+                <p class="xp-highlight text-2xl">15.000,00 <span class="text-sm">R$</span></p>
+            </div>
+            <div>
+                <p class="text-gray-400">Quantidade</p>
+                <p class="xp-highlight text-2xl">2 <span class="text-sm">investimentos</span></p>
+            </div>
+        </div>
+
+        <div class="xp-divider"></div>
+        
+        <h3 class="font-medium mb-3">Novo Investimento</h3>
+        <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+                <input type="checkbox">
+                <span>Nome do investimento</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <input type="checkbox">
+                <span>Tipo (ex: Renda Fixa)</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <input type="checkbox">
+                <span>Valor investido</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <input type="checkbox">
+                <span>Data (dd/mm/aaaa)</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="xp-card">
+        <h2 class="text-xl font-semibold mb-4">Seus Investimentos</h2>
+        
+        <div class="mb-6 pb-6 border-b border-gray-700">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="font-medium">Tesouro Direto</h3>
+                <span class="xp-badge fixed-income">Renda Fixa</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="text-gray-400 text-sm">Valor</p>
+                    <p class="xp-highlight">10.000,00 <span class="text-sm">R$</span></p>
+                </div>
+                <div>
+                    <p class="text-gray-400 text-sm">Data</p>
+                    <p>01/08/2024</p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="font-medium">Ações PETRA</h3>
+                <span class="xp-badge variable-income">Renda Variável</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="text-gray-400 text-sm">Valor</p>
+                    <p class="xp-highlight">5.000,00 <span class="text-sm">R$</span></p>
+                </div>
+                <div>
+                    <p class="text-gray-400 text-sm">Variação</p>
+                    <p class="text-green-400">+1,25%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
