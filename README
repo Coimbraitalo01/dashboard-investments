@@ -1,27 +1,38 @@
 # 💹 Dashboard de Investimentos
 
-Projeto construído com **React + Vite + TailwindCSS** para gerenciar seus investimentos de forma simples e visual.
+![Dashboard de Investimentos](https://raw.githubusercontent.com/Coimbraitalo01/dashboard-investments/main/preview.png?raw=true&v=3)
 
-![Dashboard de Investimentos](https://raw.githubusercontent.com/Coimbraitalo01/dashboard-investments/main/preview.png?raw=true&v=2)
+Projeto construído com **React + Vite + TailwindCSS** para gerenciar seus investimentos de forma simples e visual.
 
 🔗 [Acesse o projeto online](https://coimbraitalo01.github.io/dashboard-investments/)
 
 ## 🌟 Funcionalidades
 
-- Adicionar novos investimentos com nome, tipo, valor e data
-- Visualizar total investido e quantidade de ativos
-- Interface responsiva com dark mode (tema escuro/claro)
-- Gráficos interativos de distribuição de investimentos
+- 📈 Adicionar/editar/remover investimentos (nome, tipo, valor, data)
+- 💰 Visualizar patrimônio total e desempenho por categoria
+- 🌗 Alternar entre light/dark mode
+- 📊 Gráficos interativos (distribuição por tipo/rendimento)
+- 📱 Layout responsivo para todos os dispositivos
 
-## 🛠️ Tecnologias
+## 🛠️ Stack Tecnológica
 
-- [React](https://reactjs.org/) (v18+)
-- [Vite](https://vitejs.dev/) (Build tool)
-- [TailwindCSS](https://tailwindcss.com/) (Estilização)
-- [Chart.js](https://www.chartjs.org/) (Visualização de dados)
+| Tecnologia | Descrição |
+|------------|-----------|
+| [React](https://reactjs.org/) | Biblioteca front-end (v18+) |
+| [Vite](https://vitejs.dev/) | Build tool ultra-rápido |
+| [TailwindCSS](https://tailwindcss.com/) | Framework CSS utility-first |
+| [Chart.js](https://www.chartjs.org/) | Visualização de dados |
+| [React Icons](https://react-icons.github.io/) | Ícones populares |
 
-## 🚀 Como executar localmente
+## 🚀 Executando Localmente
 
-1. Clone o repositório:
 ```bash
+# Clone o repositório
 git clone https://github.com/Coimbraitalo01/dashboard-investments.git
+cd dashboard-investments
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
